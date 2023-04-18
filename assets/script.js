@@ -18,18 +18,23 @@ $("document").ready(function () {  //defers JS loading until page loaded
 
       $('.time-block').each(function () {   //uses current time block class to set past, present, future
         let timeBlock = $(this).attr("id").split("-")[1];
+      console.log(timeBlock)
 
-        if (timeBlock == currentHour) {  //current hour
-          $(this).removeClass("past");
-          $(this).removeClass("future");
+        if (timeBlock == currentHour) {  //present hour
+          // $(this).removeClass("past");
+          // $(this).removeClass("future");
+          $(this).addClass('present');
+        
         }
-        else if (timeBlock < currentHour) {    //past hour(s)
-          $(this).removeClass("future");
-          $(this).removeClass("present");
+        else if (parseInt(timeBlock) < currentHour) {    //past hour(s)
+          // $(this).removeClass("future");
+          // $(this).removeClass("present");
+          $(this).addClass('past');
         }
-        else {                              //future hours
-          $(this).removeClass("present");
-          $(this).removeClass("past");
+        else {                              //future hour(s)
+          // $(this).removeClass("present");
+          // $(this).removeClass("past");
+          $(this).addClass('future');
         }
 
       });
