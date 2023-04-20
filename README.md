@@ -14,7 +14,8 @@ To access this daily work planner open your browser of choice and paste in the f
 
 https://cherylhemphill.github.io/Daily-Planner/
 
-![image](https://user-images.githubusercontent.com/126039394/233443112-0a4df244-d821-4e08-8948-8f3db5bab6eb.png)
+![Alt text](assets/images/Work%20Day%20Planner.gif)
+
 
 
 ## Usage
